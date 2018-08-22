@@ -1,5 +1,4 @@
-﻿using Hackathon_2017_Bill_Emanuel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace Hackathon_2017_Bill_Emanuel
+namespace ImageFetcher
 {
     class DataInput
     {
@@ -90,59 +90,6 @@ namespace Hackathon_2017_Bill_Emanuel
             }
             return string.Format("{0}", string.Join(this.separator, newLine));
         }
-
-        //public string LoadExcelFile(string path)
-        //{
-        //    throw new NotImplementedException(":c");
-        //    string interimCsv = "C:\\tmp\\tmp.csv";
-        //    string outFile = "C:\\tmp\\file.txt";
-        //    try
-        //    {
-        //        try
-        //        {
-        //            if (path == string.Empty) return "Path empty.";
-        //            wb = app.Workbooks.Open(path);
-        //            //var sheet = app.Worksheets[0];
-        //            var sheet = (Excel.Worksheet)wb.Worksheets[1];
-        //            //var cells = new List<List<string>>();
-
-        //            f = File.CreateText(outFile);
-
-        //            wb.SaveAs(interimCsv, Excel.XlFileFormat.xlCSVWindows, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            return string.Format("File open exception: {0}", ex.ToString());
-        //        }
-        //        finally
-        //        {
-        //            if (wb != null)
-        //            {
-        //                wb.Close();
-        //                wb = null;
-        //            }
-        //            if (app != null)
-        //            {
-        //                app.Quit();
-        //                app = null;
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return ex.ToString();
-        //    }
-        //    finally
-        //    {
-        //        if (f != null)
-        //        {
-        //            f.Close();
-        //            f = null;
-        //        }
-        //    }
-
-        //    return string.Empty;
-        //}
 
         public string SaveFile(string path, string separator, bool useQuotes = true, bool includeQuotesForDoubles = true, bool? commaDelimiter = null)
         {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hackathon_2017_Bill_Emanuel
+namespace ImageFetcher
 {
     class Column
     {
